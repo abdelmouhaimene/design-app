@@ -2,7 +2,29 @@
 @import "tailwindcss";
 @theme{
   --font-work-sans: "work-sans";
-  --color-primary: #FFFFFF
+  --color-primary: #FFFFFF;
+  --color-rose: #d605a4;
+  --color-light-dark : #1a0830f7;
+}
+
+@layer utilities {
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .action-button {
+    @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white transition-all duration-300 hover:bg-gradient-to-tr hover:from-red-700 hover:via-pink-700 hover:to-purple-500 rounded-2xl cursor-pointer hover:shadow-lg hover:shadow-rose;
+  }
+  .action-button-bg {
+    @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-2xl cursor-pointer hover:shadow-lg hover:shadow-rose;  }
+  .link-hover-gradient {
+    @apply transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-red-700 hover:via-pink-700 hover:to-purple-500 ;
+  }
+  .signup-form-container{
+    @apply rounded-2xl border-2 border-rose shadow-lg shadow-rose/90 bg-black/10 
+  }
+  .text-input{
+    @apply w-full my-2 rounded-2xl border-2 border-gray-300/50 bg-gray-500/40 text-white font-work-sans font-light text-lg px-2 py-1
+  }
 }
 
 :root {
@@ -21,4 +43,42 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes fly {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes signal {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color:var(--color-rose);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+.animate-fly {
+  animation: fly 4s infinite;
+}
+
+
+.animate-signal {
+  animation: signal 2s infinite;
 }
