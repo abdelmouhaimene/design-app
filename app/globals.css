@@ -11,6 +11,9 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
   .action-button {
     @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white transition-all duration-300 hover:bg-gradient-to-tr hover:from-red-700 hover:via-pink-700 hover:to-purple-500 rounded-2xl cursor-pointer hover:shadow-lg hover:shadow-rose;
   }
@@ -24,6 +27,12 @@
   }
   .text-input{
     @apply w-full my-2 rounded-2xl border-2 border-gray-300/50 bg-gray-500/40 text-white font-work-sans font-light text-lg px-2 py-1
+  }
+  .service-desc{
+    @apply font-work-sans font-normal text-xl text-center mb-3
+  }
+  .service-img{
+    @apply transition-all duration-300 hover:skew-6
   }
 }
 
@@ -42,7 +51,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 @keyframes bounce {
@@ -71,6 +80,27 @@ body {
   }
 }
 
+@keyframes flowing-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  border: none; /* Remove default border */
+  height: 2px; /* Set height of the <hr> */
+  background: linear-gradient(90deg, red, rgb(250, 53, 250),  red); /* Gradient with more colors */
+  background-size: 200% 100%; /* Double the width for smooth animation */
+  animation: flowing-gradient 3s ease-in-out infinite; /* Apply animation */
+  border-radius: 10px;
+}
+
 .animate-bounce {
   animation: bounce 1s infinite;
 }
@@ -78,7 +108,7 @@ body {
   animation: fly 4s infinite;
 }
 
-
 .animate-signal {
-  animation: signal 2s infinite;
+  animation: signal 3s infinite;
 }
+

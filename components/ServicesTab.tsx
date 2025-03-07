@@ -1,0 +1,39 @@
+"use client"
+import React,{useState } from 'react'
+import { servicesData } from '@/data'
+import Image from 'next/image'
+import ActionButtons from './ActionButtons'
+const ServicesTab = () => {
+    const [selectedService,setSelectedService] = useState(servicesData[0])
+  return (
+    <div>
+        <div className='flex-between p-10'>
+            {servicesData.map((service,index) => (
+                <button onClick={() => setSelectedService(service)} className='action-button' key={index}>{service.name}</button>
+            ))}
+        </div>
+        <div className='flex-center p-6 '>
+            <Image className='service-img' src={selectedService.image} alt='serivce image' height={400} width={400}/>
+        </div>
+        <div>
+            <p className='font-work-sans font-bold text-2xl text-center mb-4'>
+                {selectedService.name}
+            </p>
+            <p className='service-desc'>
+                {selectedService.descreption1}
+            </p>
+            <p className='service-desc'>
+                {selectedService.descreption2}
+            </p>
+            <p className='service-desc'>
+                {selectedService.descreption3}
+            </p>
+        </div>
+        <div className='flex-center'>
+            <ActionButtons />
+        </div>
+    </div>
+  )
+}
+
+export default ServicesTab
