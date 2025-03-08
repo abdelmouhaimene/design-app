@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/sections/Hero";
+import Portfolio from "@/sections/Portfolio";
+import Pricing from "@/sections/Pricing";
 import Services from "@/sections/Services";
 
 export default function Home() {
@@ -9,6 +11,8 @@ export default function Home() {
       <div className="pt-10">
         <Hero />
         <Services />
+        <Portfolio />
+        <Pricing />
         <p className="font-work-sans font-black text-7xl text-primary">
           hiiii 
         </p>

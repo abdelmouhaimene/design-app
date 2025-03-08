@@ -1,4 +1,9 @@
-export const servicesData = [
+import {
+    servicesDataType,
+    PortfolioDataType
+} from '@/dataTypes'
+
+export const servicesData: servicesDataType = [
     {
         name : "Animation 2D",
         descreption1 : "Pixel Studios provides high-quality and affordable 2D animation services. Our experienced animators and designers work closely with clients to translate concepts into visually striking animated videos and motion graphics.",
@@ -40,5 +45,95 @@ export const servicesData = [
         descreption2 : "During editing, expect meticulous audio, color, effects, and additional sourcing if needed. Extensive reviews help refine videos that convey messages respecting deadlines and quality.",
         descreption3 : "Specialized captioning, subtitling, and localization allow global outreach with ongoing maintenance.",
         image : "/services/video_editing.gif",
+    },
+]
+
+// Define the type for a single project
+
+export const portfolioData: PortfolioDataType = [
+    {
+        name : '2D Animation',
+        projects : [
+            {
+                name: 'project 1',
+                image: '/services/video_editing.gif'
+            },
+            {
+                name: 'project 2',
+                image: '/services/logo_animation.gif'
+            },
+            {
+                name: 'project 3',
+                image: '/services/motion_graphic.gif'
+            }
+        ]
+    },
+    {
+        name : '3D Animation',
+        projects : [
+            {
+                name: 'project 1',
+                image: '/services/video_editing.gif'
+            },
+            {
+                name: 'project 2',
+                image: '/services/logo_animation.gif'
+            },
+            {
+                name: 'project 3',
+                image: '/services/motion_graphic.gif'
+            }
+        ]
+    },
+    {
+        name : 'Explainer videos',
+       projects : [
+            {
+                name: 'project 1',
+                image: '/services/video_editing.gif'
+            },
+            {
+                name: 'project 2',
+                image: '/services/logo_animation.gif'
+            },
+            {
+                name: 'project 3',
+                image: '/services/motion_graphic.gif'
+            }
+        ]
+    },
+    {
+        name : 'Whiteboard animation',
+       projects : [
+            {
+                name: 'project 1',
+                image: '/services/video_editing.gif'
+            },
+            {
+                name: 'project 2',
+                image: '/services/logo_animation.gif'
+            },
+            {
+                name: 'project 3',
+                image: '/services/motion_graphic.gif'
+            }
+        ]
+    },
+    {
+        name : 'Logo animation',
+       projects : [
+            {
+                name: 'project 1',
+                image: '/services/video_editing.gif'
+            },
+            {
+                name: 'project 2',
+                image: '/services/logo_animation.gif'
+            },
+            {
+                name: 'project 3',
+                image: '/services/motion_graphic.gif'
+            }
+        ]
     },
 ]

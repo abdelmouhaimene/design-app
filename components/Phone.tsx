@@ -3,7 +3,7 @@ import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 const Phone = () => {
   return (
-    <Link href="/" className='flex-between gap-x-2 transition-all duration-300 hover:text-rose'>
+    <Link href="/" className='flex-between gap-x-2 link-button'>
         <FaPhoneAlt className='text-2xl animate-bounce'/>
         <p className='font-work-sans font-medium text-xl '>
             +1-332-228-0460
