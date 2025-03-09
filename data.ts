@@ -1,7 +1,8 @@
 import {
     servicesDataType,
     PortfolioDataType,
-    pricingDataType
+    pricingDataType,
+    processDataType
 } from '@/dataTypes'
 
 export const servicesData: servicesDataType = [
@@ -48,8 +49,6 @@ export const servicesData: servicesDataType = [
         image : "/services/video_editing.gif",
     },
 ]
-
-// Define the type for a single project
 
 export const portfolioData: PortfolioDataType = [
     {
@@ -164,4 +163,33 @@ export const pricingData: pricingDataType = [
         descreption: 'Primium pack descreption',
         offers : ['60 Sec Duration','Script Writing','Custom Artwork','Background Music','HD Format Video','Dedicated Support','60 Sec Duration','Script Writing','Custom Artwork','Background Music','HD Format Video']
     },
+]
+
+export const processData: processDataType = [
+    {
+        title: 'Workshops',
+        image : '/process/process-icon-1.webp',
+        descreption :'To understand the unique demands of your business, we run multiple workshops for running an extensive business analysis, comprehending campaign objectives, preparing proposals, and deciding deliverables.'
+    },
+    {
+        title: 'Planning',
+        image : '/process/process-icon-2.webp',
+        descreption :'A lot goes into the planning stage, such as industry research, competitor research, selecting marketing channels, and strategy development. We recommend the best course of action for digitalization.'
+    },
+    {
+        title: 'A/B Testing',
+        image : '/process/process-icon-3.webp',
+        descreption :'From experimenting with content to testing advertisements and marketing techniques, we do all it takes to analyze the audience’s behavior and make alterations accordingly for maximum outreach.'
+    },
+    {
+        title: 'Execution',
+        image : '/process/process-icon-4.webp',
+        descreption :'Moving forth with execution, we analyze processes, create campaigns, optimize strategies, and produce content to secure a better ranking. We aim for quality, results, and business growth.'
+    },
+    {
+        title: 'Implementation',
+        image : '/process/process-icon-5.webp',
+        descreption :'Now, for the exciting part, we get our hands dirty with launching your project and incorporating changes as your business changes. Are you ready to get started?'
+    },
+
 ]

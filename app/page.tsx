@@ -3,7 +3,7 @@ import Hero from "@/sections/Hero";
 import Portfolio from "@/sections/Portfolio";
 import Pricing from "@/sections/Pricing";
 import Services from "@/sections/Services";
-
+import Process from "@/sections/Process";
 export default function Home() {
   return (
     <div className="bg-image bg-cover bg-no-repeat bg-center bg-[url(/full-banner.jpg)]" >
@@ -13,6 +13,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Pricing />
+        <Process />
       </div>
     </div>
   );

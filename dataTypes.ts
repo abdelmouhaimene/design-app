@@ -1,3 +1,4 @@
+//////////////////////////////////service section
 export interface serviceType {
     name : string;
     descreption1 : string;
@@ -11,15 +12,15 @@ interface ProjectType {
     image: string;
 }
 
-// Define the type for a portfolio category
+//////////////////////////////////portoflio section
 export interface PortfolioCategoryType {
     name: string;
     projects: ProjectType[];
 }
 
-// Define the type for the entire portfolio data array
 export type PortfolioDataType = PortfolioCategoryType[];
 
+//////////////////////////////////pricing section
 
 export interface pricingPackType {
     name : string;
@@ -31,3 +32,13 @@ export interface pricingPackType {
 }
 
 export type pricingDataType = pricingPackType[] ;
+
+//////////////////////////////////process section
+
+export interface processStepType {
+    title : string;
+    image : string;
+    descreption: string;
+}
+
+export type processDataType = processStepType[];
