@@ -1,6 +1,7 @@
 import {
     servicesDataType,
-    PortfolioDataType
+    PortfolioDataType,
+    pricingDataType
 } from '@/dataTypes'
 
 export const servicesData: servicesDataType = [
@@ -135,5 +136,32 @@ export const portfolioData: PortfolioDataType = [
                 image: '/services/motion_graphic.gif'
             }
         ]
+    },
+]
+
+export const pricingData: pricingDataType = [
+    {
+        name : 'Pack Basic',
+        image : '/packs/cart1.webp',
+        price : 100,
+        oldPrice: 200,
+        descreption: 'Basic pack descreption',
+        offers : ['60 Sec Duration','Script Writing','Custom Artwork','Background Music','HD Format Video','Dedicated Support']
+    },
+    {
+        name : 'Pack Professional',
+        image : '/packs/cart2.webp',
+        price : 200,
+        oldPrice: 300,
+        descreption: 'Professional pack descreption',
+        offers : ['60 Sec Duration','Script Writing','Custom Artwork','Background Music','HD Format Video','Dedicated Support']
+    },
+    {
+        name : 'Pack Primium',
+        image : '/packs/cart3.webp',
+        price : 300,
+        oldPrice: 400,
+        descreption: 'Primium pack descreption',
+        offers : ['60 Sec Duration','Script Writing','Custom Artwork','Background Music','HD Format Video','Dedicated Support','60 Sec Duration','Script Writing','Custom Artwork','Background Music','HD Format Video']
     },
 ]

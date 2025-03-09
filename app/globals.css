@@ -15,10 +15,14 @@
     @apply flex justify-center items-center;
   }
   .action-button {
-    @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white transition-all duration-300 hover:bg-gradient-to-tr hover:from-red-700 hover:via-pink-700 hover:to-purple-500 rounded-2xl cursor-pointer hover:shadow-lg hover:shadow-rose;
+    @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white transition-all duration-300 hover:bg-gradient-to-tr hover:from-red-700 hover:via-pink-700 hover:to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose active:scale-75;
   }
   .action-button-bg {
-    @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-2xl cursor-pointer hover:shadow-lg hover:shadow-rose;  }
+    @apply px-4 py-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose active:scale-75;
+  }
+  .action-button-order {
+    @apply w-full px-4 py-2 flex justify-center items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose hover:text-rose active:scale-75;
+  }
   .link-hover-gradient {
     @apply transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-red-700 hover:via-pink-700 hover:to-purple-500 ;
   }
@@ -37,6 +41,9 @@
   .link-button{
     @apply transition-all duration-300 hover:text-rose cursor-pointer active:scale-75 
   }
+  .text-gradient{
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-rose via-pink-700 to-purple-500
+  }
 }
 
 
@@ -51,6 +58,11 @@
     --background: #ededed;
     --foreground: #0a0a0a;
   }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d605a4 #d605a561; /* thumb and track colors */
 }
 
 body {

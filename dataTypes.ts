@@ -19,3 +19,15 @@ export interface PortfolioCategoryType {
 
 // Define the type for the entire portfolio data array
 export type PortfolioDataType = PortfolioCategoryType[];
+
+
+export interface pricingPackType {
+    name : string;
+    image : string;
+    price : number;
+    oldPrice: number;
+    descreption: string;
+    offers : string[];
+}
+
+export type pricingDataType = pricingPackType[] ;

@@ -13,33 +13,6 @@ export default function Home() {
         <Services />
         <Portfolio />
         <Pricing />
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
-        <p className="font-work-sans font-black text-7xl text-primary">
-          hiiii 
-        </p>
       </div>
     </div>
   );
