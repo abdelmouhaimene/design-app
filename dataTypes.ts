@@ -43,7 +43,7 @@ export interface processStepType {
 
 export type processDataType = processStepType[];
 
-//////////////////////////////////testtimonialCard section
+//////////////////////////////////testimonialCard section
 
 export interface testimonialType {
     companyName : string;
@@ -53,3 +53,13 @@ export interface testimonialType {
 }
 
 export type testimonialDataType = testimonialType[];
+
+//////////////////////////////////Contacts section
+
+export interface contactType {
+    platform : string;
+    icon : string;
+    link: string;
+}
+
+export type contactDataType = contactType[];

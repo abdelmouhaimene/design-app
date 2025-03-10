@@ -44,6 +44,12 @@
   .text-gradient{
     @apply text-transparent bg-clip-text bg-gradient-to-r from-rose via-pink-700 to-purple-500
   }
+  .contact-button {
+    @apply pb-3 text-center border-b-2 border-white cursor-pointer active:scale-90 font-work-sans font-bold text-7xl transition-all duration-300 hover:text-transparent! hover:bg-clip-text! hover:bg-gradient-to-r! hover:from-red-700! hover:via-pink-700! hover:to-purple-500! ;
+  }
+  .ligne-hover {
+    @apply pb-1 hover:border-b-2 hover:border-rose border-b-2 border-transparent
+  }
 }
 
 
@@ -93,6 +99,15 @@ body {
   }
 }
 
+@keyframes scall {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
 @keyframes fly {
   0%, 100% {
     transform: translateY(0);
@@ -110,6 +125,7 @@ body {
     color:var(--color-rose);
   }
 }
+
 
 @keyframes flowing-gradient {
   0% {
@@ -147,6 +163,9 @@ body {
   animation: bounceX 1s infinite;
 }
 
+.animate-scall {
+  animation: scall 3s infinite;
+}
 /* .Carousel-container, .Carousel-container::after , Carousel-container::before {
 margin: 0;
 padding: 0;

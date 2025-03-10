@@ -12,7 +12,7 @@ const TestimonialsCaroussel = () => {
     <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={50}
-        slidesPerView={1}
+        slidesPerView={3}
         navigation
         pagination={{ clickable: true }}
         centeredSlides

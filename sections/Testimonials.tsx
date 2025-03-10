@@ -10,7 +10,7 @@ const Testimonials = () => {
             <div className='mt-6 font-work-sans flex-center font-black text-6xl text-center'>
                 Our valuable success <br /> clients story
             </div>
-            <div>
+            <div className='p-10'>
                 <TestimonialsCaroussel />
             </div>
         </div>

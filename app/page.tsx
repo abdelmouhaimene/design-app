@@ -5,6 +5,7 @@ import Pricing from "@/sections/Pricing";
 import Services from "@/sections/Services";
 import Process from "@/sections/Process";
 import Testimonials from "@/sections/Testimonials";
+import Footer from "@/sections/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Pricing />
         <Process />
         <Testimonials />
+        <Footer />
       </div>
     </div>
   );

@@ -3,7 +3,8 @@ import {
     PortfolioDataType,
     pricingDataType,
     processDataType,
-    testimonialDataType
+    testimonialDataType,
+    contactDataType
 } from '@/dataTypes'
 
 export const servicesData: servicesDataType = [
@@ -244,4 +245,27 @@ export const testimonialData : testimonialDataType = [
         review: "We love working with Pixel Studios as they have been a great support to us. Their skills are on par, and we are happy with their work.",
         author: { name : 'Ronald Bowman' , position : 'Marketing Manager' }
     },
+]
+
+export const contactData : contactDataType = [
+    {
+        platform : 'Facebook',
+        icon : '/contact/fb2.png',
+        link : '/'
+    },
+    {
+        platform : 'Instagram',
+        icon : '/contact/insta.webp',
+        link : '/'
+    },
+    {
+        platform : 'LinkedIn',
+        icon : '/contact/link.webp',
+        link : '/'
+    },
+    {
+        platform : 'Youtube',
+        icon : '/contact/youtube.webp',
+        link : '/'
+    }
 ]
