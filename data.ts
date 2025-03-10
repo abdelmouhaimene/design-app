@@ -2,7 +2,8 @@ import {
     servicesDataType,
     PortfolioDataType,
     pricingDataType,
-    processDataType
+    processDataType,
+    testimonialDataType
 } from '@/dataTypes'
 
 export const servicesData: servicesDataType = [
@@ -192,4 +193,55 @@ export const processData: processDataType = [
         descreption :'Now, for the exciting part, we get our hands dirty with launching your project and incorporating changes as your business changes. Are you ready to get started?'
     },
 
+]
+
+export const testimonialData : testimonialDataType = [
+    {
+        companyName : 'Trustpoilot',
+        companyLogo : '/testimonial/',
+        review: "Pixel Studios never disappoints. Whether it's a simple video or complex character animation, they always hit the deadline and make sure everything is on point.",
+        author: { name : 'Steven Patterson' , position : 'Co-founder' }
+    },
+    {
+        companyName : 'Google',
+        companyLogo : '/testimonial/',
+        review: "Pixel Studios worked with us and helped us create a great video. It portrayed our product in an easily understandable and visually attractive way.",
+        author: { name : 'William Smith' , position : 'President & Founder' }
+    },
+    {
+        companyName : 'Clutch',
+        companyLogo : '/testimonial/',
+        review: "They are a team of highly skilled and professional app developers. I hired them for my latest project, and they did it perfectly! We plan to have them develop more apps for us in the future.",
+        author: { name : 'Taylor Leonard ' , position : 'Chief Marketing Officer' }
+    },
+    {
+        companyName : 'Google',
+        companyLogo : '/testimonial/',
+        review: "We love working with Pixel Studios as they have been a great support to us. Their skills are on par, and we are happy with their work.",
+        author: { name : 'Ronald Bowman' , position : 'Marketing Manager' }
+    },
+    {
+        companyName : 'Trustpoilot',
+        companyLogo : '/testimonial/',
+        review: "Pixel Studios never disappoints. Whether it's a simple video or complex character animation, they always hit the deadline and make sure everything is on point.",
+        author: { name : 'Steven Patterson' , position : 'Co-founder' }
+    },
+    {
+        companyName : 'Google',
+        companyLogo : '/testimonial/',
+        review: "Pixel Studios worked with us and helped us create a great video. It portrayed our product in an easily understandable and visually attractive way.",
+        author: { name : 'William Smith' , position : 'President & Founder' }
+    },
+    {
+        companyName : 'Clutch',
+        companyLogo : '/testimonial/',
+        review: "They are a team of highly skilled and professional app developers. I hired them for my latest project, and they did it perfectly! We plan to have them develop more apps for us in the future.",
+        author: { name : 'Taylor Leonard ' , position : 'Chief Marketing Officer' }
+    },
+    {
+        companyName : 'Google',
+        companyLogo : '/testimonial/',
+        review: "We love working with Pixel Studios as they have been a great support to us. Their skills are on par, and we are happy with their work.",
+        author: { name : 'Ronald Bowman' , position : 'Marketing Manager' }
+    },
 ]

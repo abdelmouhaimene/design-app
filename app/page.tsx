@@ -4,6 +4,8 @@ import Portfolio from "@/sections/Portfolio";
 import Pricing from "@/sections/Pricing";
 import Services from "@/sections/Services";
 import Process from "@/sections/Process";
+import Testimonials from "@/sections/Testimonials";
+
 export default function Home() {
   return (
     <div className="bg-image bg-cover bg-no-repeat bg-center bg-[url(/full-banner.jpg)]" >
@@ -14,6 +16,7 @@ export default function Home() {
         <Portfolio />
         <Pricing />
         <Process />
+        <Testimonials />
       </div>
     </div>
   );

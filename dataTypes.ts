@@ -42,3 +42,14 @@ export interface processStepType {
 }
 
 export type processDataType = processStepType[];
+
+//////////////////////////////////testtimonialCard section
+
+export interface testimonialType {
+    companyName : string;
+    companyLogo : string;
+    review: string;
+    author: { name : string , position : string }
+}
+
+export type testimonialDataType = testimonialType[];
