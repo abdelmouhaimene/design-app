@@ -7,12 +7,14 @@ export interface serviceType {
     image : string;
 }
 export type servicesDataType = serviceType[];
-interface ProjectType {
+
+//////////////////////////////////portoflio section
+export interface ProjectType {
     name: string;
+    descreption : string
     image: string;
 }
 
-//////////////////////////////////portoflio section
 export interface PortfolioCategoryType {
     name: string;
     projects: ProjectType[];

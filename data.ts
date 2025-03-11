@@ -58,14 +58,32 @@ export const portfolioData: PortfolioDataType = [
         projects : [
             {
                 name: 'project 1',
+                descreption : 'project descreption',
                 image: '/services/video_editing.gif'
             },
             {
                 name: 'project 2',
+                 descreption : 'project descreption',
                 image: '/services/logo_animation.gif'
             },
             {
                 name: 'project 3',
+                 descreption : 'project descreption',
+                image: '/services/motion_graphic.gif'
+            },
+            {
+                name: 'project 1',
+                descreption : 'project descreption',
+                image: '/services/video_editing.gif'
+            },
+            {
+                name: 'project 2',
+                 descreption : 'project descreption',
+                image: '/services/logo_animation.gif'
+            },
+            {
+                name: 'project 3',
+                 descreption : 'project descreption',
                 image: '/services/motion_graphic.gif'
             }
         ]
@@ -75,14 +93,17 @@ export const portfolioData: PortfolioDataType = [
         projects : [
             {
                 name: 'project 1',
+                descreption : 'project descreption',
                 image: '/services/video_editing.gif'
             },
             {
                 name: 'project 2',
+                 descreption : 'project descreption',
                 image: '/services/logo_animation.gif'
             },
             {
                 name: 'project 3',
+                 descreption : 'project descreption',
                 image: '/services/motion_graphic.gif'
             }
         ]
@@ -92,14 +113,17 @@ export const portfolioData: PortfolioDataType = [
        projects : [
             {
                 name: 'project 1',
+                descreption : 'project descreption',
                 image: '/services/video_editing.gif'
             },
             {
                 name: 'project 2',
+                 descreption : 'project descreption',
                 image: '/services/logo_animation.gif'
             },
             {
                 name: 'project 3',
+                 descreption : 'project descreption',
                 image: '/services/motion_graphic.gif'
             }
         ]
@@ -109,14 +133,17 @@ export const portfolioData: PortfolioDataType = [
        projects : [
             {
                 name: 'project 1',
+                descreption : 'project descreption',
                 image: '/services/video_editing.gif'
             },
             {
                 name: 'project 2',
+                 descreption : 'project descreption',
                 image: '/services/logo_animation.gif'
             },
             {
                 name: 'project 3',
+                 descreption : 'project descreption',
                 image: '/services/motion_graphic.gif'
             }
         ]
@@ -126,14 +153,17 @@ export const portfolioData: PortfolioDataType = [
        projects : [
             {
                 name: 'project 1',
+                descreption : 'project descreption',
                 image: '/services/video_editing.gif'
             },
             {
                 name: 'project 2',
+                 descreption : 'project descreption',
                 image: '/services/logo_animation.gif'
             },
             {
                 name: 'project 3',
+                 descreption : 'project descreption',
                 image: '/services/motion_graphic.gif'
             }
         ]
