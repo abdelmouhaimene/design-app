@@ -11,7 +11,7 @@ const TestimonialsCaroussel = () => {
   return (
     <Swiper
     modules={[ Pagination,Autoplay]}
-    spaceBetween={50}
+    spaceBetween={45}
     slidesPerView={3}
     pagination={{ clickable: true }}
     scrollbar={{draggable: true}}
