@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-image bg-cover bg-no-repeat bg-center bg-[url(/full-banner.jpg)]" >
        <Navbar />
-      <div className="pt-10">
+      <div className="md:pt-16 pt-32">
         <Hero />
         <Services />
         <Portfolio />

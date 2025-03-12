@@ -9,20 +9,26 @@
 }
 
 @layer utilities {
+  .section-container{
+    @apply md:p-10 sm:p-4 p-2
+  }
   .flex-between {
     @apply flex justify-between items-center;
   }
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .flex-responsive {
+    @apply md:flex-row flex-col;
+  }
   .action-button {
-    @apply px-4 py-2 gap-x-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white transition-all duration-300 hover:bg-gradient-to-tr hover:from-red-700 hover:via-pink-700 hover:to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose active:scale-75;
+    @apply px-4 py-2 gap-x-2 flex justify-between items-center font-work-sans font-semibold md:text-lg text-sm border-2 border-rose hover:border-white transition-all duration-300 hover:bg-gradient-to-tr hover:from-red-700 hover:via-pink-700 hover:to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose active:scale-75;
   }
   .action-button-bg {
-    @apply px-4 py-2 gap-x-2 flex justify-between items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose active:scale-75;
+    @apply px-4 py-2 gap-x-2 flex justify-between items-center font-work-sans font-semibold md:text-lg text-sm border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose active:scale-75;
   }
   .action-button-order {
-    @apply w-full px-4 py-2 gap-x-2 flex justify-center items-center font-work-sans font-semibold text-lg border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose hover:text-rose active:scale-75;
+    @apply w-full px-4 py-2 gap-x-2 flex justify-center items-center font-work-sans font-semibold md:text-lg text-sm border-2 border-rose hover:border-white hover:bg-none hover:bg-transparent transition-all duration-300 bg-gradient-to-tr from-red-700 via-pink-700 to-purple-500 rounded-full cursor-pointer hover:shadow-lg hover:shadow-rose hover:text-rose active:scale-75;
   }
   .link-hover-gradient {
     @apply transition-all duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-red-700 hover:via-pink-700 hover:to-purple-500 ;

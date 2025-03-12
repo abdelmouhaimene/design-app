@@ -23,12 +23,12 @@ const Navbar = () => {
         };
       }, []);
     return (
-        <div className={ isScrolled ? 'bg-light-dark z-50 fixed px-20 py-4 w-full' : 'z-50 fixed px-20 py-10 w-full'}>
-            <div className='flex-between '>
+        <div className={ isScrolled ? 'bg-light-dark z-50 fixed md:px-20 sm:px-10 px-4 py-4 w-full' : 'z-50 fixed md:px-20 sm:px-10 py-10 w-full'}>
+            <div className='flex-between  md:flex-row flex-col gap-y-2'>
                 <p className='font-work-sans'>
                     Logo
                 </p>
-                <div className='flex-between gap-x-10'>
+                <div className='flex-between gap-x-10 sm:flex-row flex-col gap-y-2'>
                     <Phone />
                     <button className='action-button'>
                         Request a quote

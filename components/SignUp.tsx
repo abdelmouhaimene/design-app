@@ -3,7 +3,7 @@ import React from 'react'
 
 const SignUp = () => {
   return (
-    <div className='p-10'>
+    <div className='section-container'>
         <div className='signup-form-container p-4'>
             <p className='font-work-sans font-bold text-3xl mb-2'>
                 We are here to help!
