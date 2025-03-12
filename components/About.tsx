@@ -10,7 +10,7 @@ const About = () => {
         <p className='font-work-sans font-medium text-lg mb-6'>
         Get the Best <span className='font-bold'>2D, 3D Video Animation Service</span> for your <span className='font-bold'> product explainer video </span>product explainer video or for advertising, feature films, television and special venues.
         </p>
-        <div className='w-2/3'>
+        <div className='w-3/4'>
           <ActionButtons />
         </div>
 
