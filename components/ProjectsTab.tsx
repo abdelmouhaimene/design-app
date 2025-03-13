@@ -6,9 +6,9 @@ const ProjectsTab = () => {
 
   return (
     <div>
-        <div className='flex-between'>
+        <div className='flex flex-wrap gap-x-4 gap-y-2 p-2'>
             {portfolioData.map((tab,index) => (
-                <button onClick={() => setSelectedTab(tab)} className={selectedTab.name === tab.name ? 'text-rose font-work-sans font-semibold cursor-pointer' : 'link-button font-work-sans font-semibold'} key={index}>{tab.name}</button>
+                <button onClick={() => setSelectedTab(tab)} className={selectedTab.name === tab.name ? 'text-rose font-work-sans font-semibold cursor-pointer flex-grow flex-shrink basis-auto'  : 'link-button font-work-sans font-semibold flex-grow flex-shrink basis-auto'} key={index}>{tab.name}</button>
             ))}
         </div>
         <div>

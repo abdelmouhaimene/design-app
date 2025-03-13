@@ -14,7 +14,7 @@ const PortoflioCarousel = ({selectedTab} : {selectedTab : PortfolioCategoryType}
       <Swiper
         modules={[Navigation, Pagination,Autoplay]}
         spaceBetween={40}
-        slidesPerView={4}
+        slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{draggable: true}}
@@ -23,13 +23,27 @@ const PortoflioCarousel = ({selectedTab} : {selectedTab : PortfolioCategoryType}
           disableOnInteraction: false,
         }}
         loop
-        className='mt-10 p-10!'
+        className='md:mt-10 mt-6 p-10!'
         style={
           {
           '--swiper-pagination-color' : '#d605a4',
           '--swiper-navigation-color' : '#d605a4'
           } as React.CSSProperties
         }
+        breakpoints={{
+          // When window width is >= 640px
+          640: {
+            slidesPerView: 2,
+          },
+          // When window width is >= 768px
+          768: {
+            slidesPerView: 3,
+          },
+          // When window width is >= 1024px
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
       >
         {selectedTab.projects.map((project,index) => (
           <SwiperSlide key={index} >

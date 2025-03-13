@@ -3,8 +3,8 @@ import PricingCard from '@/components/PricingCard'
 import { pricingData } from '@/data'
 const Pricing = () => {
   return (
-    <div className='p-10'>        
-        <p className='font-work-sans font-black text-8xl'>
+    <div className='section-container'>        
+        <p className='font-work-sans font-black lg:text-8xl md:text-6xl text-4xl'>
             Pricing
         </p>
         <hr className='mt-4 w-full h-1 text-white/70'/>
