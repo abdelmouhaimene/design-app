@@ -7,9 +7,15 @@ const ServicesTab = () => {
     const [selectedService,setSelectedService] = useState(servicesData[0])
   return (
     <div>
-        <div className='flex-between p-10'>
-            {servicesData.map((service,index) => (
-                <button onClick={() => setSelectedService(service)} className='action-button' key={index}>{service.name}</button>
+        <div className='flex flex-wrap gap-x-4 gap-y-2 p-2'>
+            {servicesData.map((service, index) => (
+                <button
+                onClick={() => setSelectedService(service)}
+                className='action-button flex-grow flex-shrink basis-auto'
+                key={index}
+                >
+                {service.name}
+                </button>
             ))}
         </div>
         <div className='flex-center p-6 '>
