@@ -12,7 +12,7 @@ const ProcessCaroussel = () => {
             return () => clearInterval(interval);
       }, []);
   return (
-    <div className={`p-10 grid grid-cols-5`}>
+    <div className={`section-container grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-y-2`}>
         {processData.map((step,index) => (
             <div  key={index} className='flex justify-center items-start'>
                 <ProcessStep step={step} selectedStep={selectedStep} index={index} lenght={processData.length}/>

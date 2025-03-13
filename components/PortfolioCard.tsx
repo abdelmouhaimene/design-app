@@ -16,7 +16,7 @@ const PortfolioCard = ({project} : {project : ProjectType}) => {
     />
   
     {/* Text container positioned at the bottom left */}
-        <div className='rounded-lg w-full h-full text-center flex-center flex-col bottom-0 left-0 absolute z-10 font-work-sans p-4 bg-white/70  opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+        <div className='rounded-xl w-full h-full text-center flex-center flex-col bottom-0 left-0 absolute z-10 font-work-sans p-4 bg-white/70  opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
             <p className='font-extrabold text-lg text-gradient'>{project.name}</p>
             <p className='font-medium text-sm text-gray-700'>{project.descreption}</p>
         </div>

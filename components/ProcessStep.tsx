@@ -10,7 +10,7 @@ const ProcessStep = ({step,selectedStep,index,lenght} : {step : processStepType,
     }
     return (
         <div className={inTime('flex-col flex-center gap-y-2')}>
-            <div className='rounded-full flex-center bg-white p-10 h-32 w-32'>
+            <div className='rounded-full flex-center bg-white section-container md:h-32 md:w-32 h-26 w-26'>
                 <Image src={step.image} alt={step.title} height={50} width={50} />
             </div>
             <div className={inTime('flex-center gap-x-3 ')}>
@@ -24,7 +24,7 @@ const ProcessStep = ({step,selectedStep,index,lenght} : {step : processStepType,
                 }
             </div>
             <div className='px-4'>
-                <p className='font-work-sans text-sm font-light text-center'>
+                <p className='hidden sm:block font-work-sans text-sm font-light text-center'>
                     {step.descreption}
                 </p>
             </div>
