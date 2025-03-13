@@ -10,18 +10,28 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const TestimonialsCaroussel = () => {
   return (
     <Swiper
-    modules={[ Pagination,Autoplay]}
-    spaceBetween={45}
-    slidesPerView={3}
-    pagination={{ clickable: true }}
-    scrollbar={{draggable: true}}
-    autoplay={{
-      delay: 2500,
-      disableOnInteraction: false,
-    }}
-    loop
-    className='mt-10 p-10!'
-    style={{'--swiper-pagination-color' : '#d605a4'} as React.CSSProperties }
+      modules={[ Pagination,Autoplay]}
+      spaceBetween={45}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      scrollbar={{draggable: true}}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      loop
+      className='md:mt-10 mt-6 p-10!'
+      style={{'--swiper-pagination-color' : '#d605a4'} as React.CSSProperties }
+      breakpoints={{
+        // When window width is >= 768px
+        768: {
+          slidesPerView: 2,
+        },
+        // When window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+        },
+      }}
     >
         {testimonialData.map((testimonial,index) => (
             <SwiperSlide key={index}>

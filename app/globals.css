@@ -10,7 +10,7 @@
 
 @layer utilities {
   .section-container{
-    @apply md:p-10 sm:p-4 p-2
+    @apply md:p-10 sm:p-4 p-3
   }
   .flex-between {
     @apply flex justify-between items-center;
