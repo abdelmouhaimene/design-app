@@ -7,7 +7,7 @@ const ServicesTab = () => {
     const [selectedService,setSelectedService] = useState(servicesData[0])
   return (
     <div>
-        <div className='flex flex-wrap gap-x-4 gap-y-2 p-2'>
+        <div className='flex flex-wrap gap-x-4 gap-y-2 px-2 py-4'>
             {servicesData.map((service, index) => (
                 <button
                 onClick={() => setSelectedService(service)}
@@ -18,7 +18,7 @@ const ServicesTab = () => {
                 </button>
             ))}
         </div>
-        <div className='flex-center p-6 '>
+        <div className='flex-center px-6 py-10 '>
             <Image className='service-img' src={selectedService.image} alt='serivce image' height={400} width={400}/>
         </div>
         <div>

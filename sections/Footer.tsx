@@ -5,14 +5,14 @@ import Link from 'next/link'
 const Footer = () => {
     const currentYear = new Date().getFullYear();
   return (
-    <div className='p-10'>
+    <div className='section-container'>
         <UpperFooter />
         <DownFooter />
-        <div className='flex-between'>
+        <div className='flex-between flex-col md:flex-row'>
             <p>
                 All Rights Reserved {currentYear} - Comapany Name.
             </p>
-            <div className='flex-between gap-x-2'>
+            <div className='flex-between  gap-x-2'>
                 <Link className='link-hover-gradient' href='/'>
                     Privacy Policy  
                 </Link>

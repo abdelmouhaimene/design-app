@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 const DownFooter = () => {
   return (
-    <div className='px-10 py-20'>
+    <div className='px-10 md:py-20 py-10'>
         <div className='flex-col gap-y-4 flex-center'>
             <button className=''>
                 <p className='contact-button animate-signal'>

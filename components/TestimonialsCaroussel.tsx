@@ -20,7 +20,7 @@ const TestimonialsCaroussel = () => {
         disableOnInteraction: false,
       }}
       loop
-      className='md:mt-10 mt-6 p-10!'
+      className='md:mt-10 mt-6 px-6! py-10!'
       style={{'--swiper-pagination-color' : '#d605a4'} as React.CSSProperties }
       breakpoints={{
         // When window width is >= 768px

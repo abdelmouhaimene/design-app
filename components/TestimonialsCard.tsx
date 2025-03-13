@@ -4,9 +4,9 @@ import { testimonialType } from '@/dataTypes'
 import Image from 'next/image'
 const TestimonialsCard = ({ testimonial }: { testimonial: testimonialType }) => {
   return (
-    <div className='p-10 lg:p-10 md:p-4  border-2 border-rose rounded-2xl font-work-sans shadow-md shadow-rose lg:h-90 h-100'>
+    <div className='p-8 lg:p-10 md:p-4  border-2 border-rose rounded-2xl font-work-sans shadow-md shadow-rose lg:h-90 md:h-100 h-110'>
       <Image src={testimonial.companyLogo} alt={testimonial.companyName} height={100} width={100} />
-     <div className='lg:h-40 h-50'>
+     <div className='lg:h-40 md:h-50 h-60'>
       <p className='my-6 sm:text-sm text-lg'>
         {testimonial.review}
       </p>
